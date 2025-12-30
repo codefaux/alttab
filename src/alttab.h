@@ -47,10 +47,12 @@ along with alttab.  If not, see <http://www.gnu.org/licenses/>.
 #define COLFRAME    2
 #define COLBORDER   3
 #define COLINACT    4
-#define NCOLORS     5
+#define COLMIN      5
+#define NCOLORS     6
 #define DEFCOLBG    "black"
 #define DEFCOLFG    "grey"
 #define DEFCOLFRAME "#a0abab"
+#define DEFCOLMIN   "#80808b"
 #define DEFCOLBORDER "black"
 
 #define XDEPTH      24          // TODO: get rid of this
