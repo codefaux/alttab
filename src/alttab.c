@@ -472,10 +472,16 @@ static int use_args_and_xrm(int *argc, char **argv)
     g.color[COLFG].name = s ? s : DEFCOLFG;
     s = xresource_load_string(&db, XRMAPPNAME, "framecolor");
     g.color[COLFRAME].name = s ? s : DEFCOLFRAME;
+    
+    // workaround to match COLMIN to COLFRAME w/o new variables
+    g.color[COLMIN].name = s ? s : DEFCOLFRAME; // Set minimized color to frame color
+    s = xresource_load_string(&db, XRMAPPNAME, "mincolor");
+    if (s) { // if minimized color was specified, overwrite
+        g.color[COLMIN].name = s;
+    }
+
     s = xresource_load_string(&db, XRMAPPNAME, "inactcolor");
     g.color[COLINACT].name = s ? s : g.color[COLFG].name;
-    s = xresource_load_string(&db, XRMAPPNAME, "mincolor");
-    g.color[COLMIN].name = s ? s : DEFCOLFRAME;
     s = xresource_load_string(&db, XRMAPPNAME, "bordercolor");
     g.color[COLBORDER].name = s ? s : DEFCOLBORDER;
 
