@@ -89,6 +89,7 @@ typedef struct {
     Pixmap icon_mask;
     unsigned int icon_w, icon_h;
     bool icon_allocated;        // we must free icon, because we created it (placeholder or depth conversion)
+    bool is_minimized;
 #ifdef ICON_DEBUG
     char icon_src[MAXNAMESZ];
 #endif
