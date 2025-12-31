@@ -474,6 +474,8 @@ static int use_args_and_xrm(int *argc, char **argv)
     g.color[COLFRAME].name = s ? s : DEFCOLFRAME;
     s = xresource_load_string(&db, XRMAPPNAME, "inactcolor");
     g.color[COLINACT].name = s ? s : g.color[COLFG].name;
+    s = xresource_load_string(&db, XRMAPPNAME, "mincolor");
+    g.color[COLMIN].name = s ? s : DEFCOLMIN;
     s = xresource_load_string(&db, XRMAPPNAME, "bordercolor");
     g.color[COLBORDER].name = s ? s : DEFCOLBORDER;
 
