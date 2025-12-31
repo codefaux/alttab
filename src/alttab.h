@@ -206,7 +206,7 @@ typedef struct {
     int option_bottom_line;
     bool option_no_skip_taskbar;
     Color color[NCOLORS];
-    GC gcDirect, gcReverse, gcFrame;    // used in both gui.c and win.c
+    GC gcDirect, gcReverse, gcFrame, gcMin;    // used in both gui.c and win.c
     unsigned int ignored_modmask;
     icon_t *ic;                 // cache of all icons
     EwmhFeatures ewmh;          // guessed by ewmh_detectFeatures
