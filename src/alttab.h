@@ -52,7 +52,6 @@ along with alttab.  If not, see <http://www.gnu.org/licenses/>.
 #define DEFCOLBG    "black"
 #define DEFCOLFG    "grey"
 #define DEFCOLFRAME "#a0abab"
-#define DEFCOLMIN   "#80808b"
 #define DEFCOLBORDER "black"
 
 #define XDEPTH      24          // TODO: get rid of this
