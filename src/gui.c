@@ -132,7 +132,11 @@ static void framesRedraw(void)
         if (f == selNdx)
             continue;           // skip
         drawFr(g.gcReverse, f); // thick bg
-        drawFr(g.gcDirect, f);  // thin frame
+        if (g.winlist[f].is_minimized) {
+            drawFr(g.gcMin, f);  // minimized frame
+        } else {
+            drawFr(g.gcDirect, f);  // thin frame
+        }
     }
 // _after_ unselected draw selected, because they may overlap
     drawFr(g.gcFrame, selNdx);
