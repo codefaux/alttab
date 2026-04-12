@@ -141,7 +141,7 @@ static void print_winlist(void)
 }
 
 //
-//  Find a desktop name for a specific destkop
+//  Find a desktop name for a specific desktop
 //
 size_t get_desktop_name(Window win, unsigned long desktop, char* name) {
     Atom dnames = XInternAtom(dpy, "_NET_DESKTOP_NAMES", False);
@@ -606,7 +606,7 @@ endIcon:
     WI.bottom_line[0] = '\0';
     long unsigned int nws, *pid;
     char dname[MAXNAMESZ] = "?";
-    char procd[32] = "?";
+    char procd[32];
     int sr;
     struct stat st;
     struct passwd *gu;
