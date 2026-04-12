@@ -87,7 +87,7 @@ alttab.framecolor:      _rnd_low
 ! Keep switcher after Alt-Tab release
 !alttab.keep:           true
 
-! Force showing desktop number at the bottom of each tile
+! Force showing desktop name at the bottom of each tile
 !alttab.bottomline:     1
 
 ! Ignore _NET_WM_STATE_SKIP_TASKBAR
