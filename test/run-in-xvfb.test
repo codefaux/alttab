@@ -122,7 +122,7 @@ check_alttab()
 {
     stage="$1" ; comment="$2"
     sleep 0.5
-    if ! ps -p "$alttab" >/dev/null ; then
+    if ! kill -0 "$alttab" >/dev/null 2>&1 ; then
         echo "not ok $stage - $comment"
         exit 1
     else
