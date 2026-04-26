@@ -592,7 +592,7 @@ endIcon:
 
     WI.reclevel = reclevel;
     WI.desktop = desktop;
-    WI.is_minimized = is_minimized(win);
+    WI.use_minimized_color = g.option_minimize_color && is_minimized(win);
 
     g.maxNdx++;
     msg(1, "window %d, id %lx added to list\n", g.maxNdx, win);
