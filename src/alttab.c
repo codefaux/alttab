@@ -478,6 +478,7 @@ static int use_args_and_xrm(int *argc, char **argv)
     s = xresource_load_string(&db, XRMAPPNAME, "mincolor");
     if (s) { // if minimized color was specified, overwrite
         g.color[COLMIN].name = s;
+        g.option_minimize_color = (s != NULL);
     }
 
     s = xresource_load_string(&db, XRMAPPNAME, "inactcolor");
