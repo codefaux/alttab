@@ -214,6 +214,7 @@ typedef struct {
 //    SwitchMoment last; // for detecting false focus events from WM
     bool option_keep_ui;
     bool option_sort_minimize;
+    bool option_minimize_color;
 } Globals;
 
 // gui
