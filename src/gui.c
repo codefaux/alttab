@@ -132,7 +132,7 @@ static void framesRedraw(void)
         if (f == selNdx)
             continue;           // skip
         drawFr(g.gcReverse, f); // thick bg
-        if (g.winlist[f].is_minimized) {
+        if (g.winlist[f].use_minimized_color) {
             drawFr(g.gcMin, f);  // minimized frame
         } else {
             drawFr(g.gcDirect, f);  // thin frame
