@@ -340,7 +340,7 @@ Your Xresources database probably already has \*background, \*foreground or \*fo
 
       <0>: Empty.
 
-      <1>: Index of desktop to which the window belongs, starting from zero.
+      <1>: Name of desktop to which the window belongs.
 
       <2>: User name. Requires _NET_WM_PID freedesktop property and /proc file system.
 
@@ -359,19 +359,19 @@ Your Xresources database probably already has \*background, \*foreground or \*fo
   * `-h`:
     short help
 
-##CAVEATS
+## CAVEATS
 
 Run alttab after WM, or autodetection will fail.
 
-##AUTHOR
+## AUTHOR
 
 Copyright 2017-2025 Alexander Kulak `<sa-dev AT odd POINT systems>`.
 
-##REPORTING BUGS
+## REPORTING BUGS
 
 Please [report issues on github](https://github.com/sagb/alttab/issues).
 
-##SEE ALSO
+## SEE ALSO
 
 [EWMH compatible WM list](https://en.wikipedia.org/wiki/Extended_Window_Manager_Hints#List_of_window_managers_that_support_Extended_Window_Manager_Hints).
 
